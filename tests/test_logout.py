@@ -1,6 +1,6 @@
 import pytest
 from selenium.webdriver.support import expected_conditions as EC
-from locators import StellarBurgersLocators
+from locators.locators import StellarBurgersLocators
 
 
 class TestLogout:

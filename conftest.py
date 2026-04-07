@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 
-from data_generators import (
+from helpers.data_generators import (
     generate_unique_email,
     generate_valid_password,
     generate_short_password,
