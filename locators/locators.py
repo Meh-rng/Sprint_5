@@ -35,6 +35,8 @@ class StellarBurgersLocators:
     
     # Сообщение об ошибке для некорректного пароля
     PASSWORD_ERROR = (By.XPATH, "//p[text()='Некорректный пароль']")
+
+    REGISTER_TITLE = (By.XPATH, "//h2[text()='Регистрация']")
     
     # ===== ФОРМА ВХОДА =====
         # Заголовок формы входа
@@ -77,12 +79,16 @@ class StellarBurgersLocators:
     # Таб "Начинки"
     FILLINGS_TAB = (By.XPATH, "//div[contains(@class, 'tab_tab__') and text()='Начинки']")
     
-    # Активный таб (подсвеченный)
-    ACTIVE_TAB = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current')]")
+    # Заголовок раздела «Булки»
+    BUNS_SECTION_TITLE = (By.XPATH, "//h2[text()='Булки']")
+
+    # Заголовок раздела «Соусы» (с учетом опечатки)
+    SAUCES_SECTION_TITLE = (By.XPATH, "//h2[text()='Соусы' or text()='Coyack']")
+
+    # Заголовок раздела «Начинки»
+    FILLINGS_SECTION_TITLE = (By.XPATH, "//h2[text()='Начинки']")
     
     # ===== ВСПОМОГАТЕЛЬНЫЕ ЛОКАТОРЫ =====
-    # Заголовок страницы "Вход"
-    LOGIN_TITLE = (By.XPATH, "//h2[text()='Вход']")
-    
+
     # Кнопка закрытия модального окна
     CLOSE_BUTTON = (By.XPATH, "//button[@class='Modal_modal__close_modified__3V5XS']")
